@@ -9,7 +9,7 @@ export default function Home() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Image
-            src="/next.svg"
+            src="/images/diamond-duck-sticker.png"
             alt="Learning App Logo"
             width={40}
             height={40}
@@ -36,7 +36,7 @@ export default function Home() {
       <main className="flex-grow grid place-items-center px-8 py-20 sm:px-20">
         <div className="flex flex-col gap-10 items-center text-center sm:text-left sm:items-start max-w-xl">
           <h1 className="text-3xl sm:text-4xl font-bold">
-            Welcome to LearnHub 🚀
+            Welcome to LearnHub 🦆
           </h1>
           <p className="text-base text-gray-600 dark:text-gray-300">
             Your personal space to explore interactive lessons, track progress, and learn at your own pace.
