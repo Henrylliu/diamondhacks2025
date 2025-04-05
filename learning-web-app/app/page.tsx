@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Top Navigation Bar */}
-      <header className="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-gray-800">
+      <header className="flex justify-between items-center px-6 py-4 border-b border-blue-500 dark:border-gray-800">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Image
@@ -38,7 +38,7 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl font-bold">
             Welcome to Diamond Duck! 🦆
           </h1>
-          <p className="text-base text-gray-600 dark:text-gray-300">
+          <p className="text-base text-black-900 dark:text-gray-300">
             Your personal space to explore interactive lessons, track progress, and learn at your own pace.
           </p>
 
