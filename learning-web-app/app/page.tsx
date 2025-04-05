@@ -15,7 +15,7 @@ export default function Home() {
             height={40}
             className="dark:invert"
           />
-          <span className="text-lg font-semibold">LearnHub</span>
+          <span className="text-lg font-semibold">Diamond Duck</span>
         </div>
 
         {/* Navigation Links */}
@@ -36,7 +36,7 @@ export default function Home() {
       <main className="flex-grow grid place-items-center px-8 py-20 sm:px-20">
         <div className="flex flex-col gap-10 items-center text-center sm:text-left sm:items-start max-w-xl">
           <h1 className="text-3xl sm:text-4xl font-bold">
-            Welcome to LearnHub 🦆
+            Welcome to Diamond Duck! 🦆
           </h1>
           <p className="text-base text-gray-600 dark:text-gray-300">
             Your personal space to explore interactive lessons, track progress, and learn at your own pace.
