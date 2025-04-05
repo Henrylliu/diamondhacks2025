@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Top Navigation Bar */}
-      <header className="flex justify-between items-center px-6 py-4 border-b border-blue-500 dark:border-gray-800">
+      <header className="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-gray-800">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Image
@@ -38,37 +37,31 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl font-bold">
             Welcome to Diamond Duck! 🦆
           </h1>
-          <p className="text-base text-black-900 dark:text-gray-300">
+          <p className="text-base text-gray-600 dark:text-gray-300">
             Your personal space to explore interactive lessons, track progress, and learn at your own pace.
           </p>
 
-          <ul className="list-disc pl-5 text-sm text-left">
-            <li>Interactive lessons and quizzes</li>
-            <li>Progress tracking and achievements</li>
-            <li>Learn anywhere, anytime</li>
-          </ul>
+        <ul className="list-disc pl-5 text-sm text-left">
+          <li>Interactive lessons and quizzes</li>
+          <li>Progress tracking and achievements</li>
+          <li>Learn anywhere, anytime</li>
+        </ul>
 
-          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <Link
-              href="/lessons"
-              className="bg-black text-white px-5 py-3 rounded-full text-sm sm:text-base font-semibold hover:bg-neutral-800 transition"
-            >
-              📚 Start Learning
-            </Link>
-            <Link
-              href="/progress"
-              className="border border-gray-300 dark:border-gray-600 px-5 py-3 rounded-full text-sm sm:text-base font-semibold hover:bg-gray-100 dark:hover:bg-neutral-800 transition"
-            >
-              📈 View Progress
-            </Link>
-          </div>
+        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <Link
+            href="/lessons"
+            className="bg-black text-white px-5 py-3 rounded-full text-sm sm:text-base font-semibold hover:bg-neutral-800 transition"
+          >
+            📚 Start Learning
+          </Link>
+          <Link
+            href="/progress"
+            className="border border-gray-300 dark:border-gray-600 px-5 py-3 rounded-full text-sm sm:text-base font-semibold hover:bg-gray-100 dark:hover:bg-neutral-800 transition"
+          >
+            📈 View Progress
+          </Link>
         </div>
-      </main>
-
-      {/* Footer */}
-      <footer className="text-center text-sm py-4 text-gray-500">
-        Built with Next.js and ❤️
-      </footer>
+      </div>
     </div>
   );
 }
