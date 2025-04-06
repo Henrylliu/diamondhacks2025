@@ -33,9 +33,6 @@ export default function RootLayout({
             <Link href="/lessons" className="hover:underline hover:underline-offset-4">
               Lessons
             </Link>
-            <Link href="/learn" className="hover:underline hover:underline-offset-4">
-              Learn
-            </Link>
             <Link href="/about" className="hover:underline hover:underline-offset-4">
               About
             </Link>
