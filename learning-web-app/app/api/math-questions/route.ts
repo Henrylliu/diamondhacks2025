@@ -9,7 +9,7 @@ export async function GET() {
     console.log("✅ Connected to MongoDB");
 
     const db = client.db("sample_mflix");
-    const collection = db.collection("comments");
+    const collection = db.collection("math-questions");
 
     const count = await collection.countDocuments();
     console.log("📊 Total docs in collection:", count);

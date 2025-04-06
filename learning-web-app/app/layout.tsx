@@ -1,11 +1,13 @@
 import "./globals.css";
-import Image from "next/image";
+import { Inter } from "next/font/google";
 import Link from "next/link";
-import type { Metadata } from "next";
+import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "LearnHub",
-  description: "A fun and interactive way to learn",
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata = {
+  title: "Diamond Duck",
+  description: "A learning web app",
 };
 
 export default function RootLayout({
@@ -15,40 +17,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">
-        {/* Persistent Navbar */}
-        <header className="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-gray-800">
-          <Link href="/" className="flex items-center gap-2">
+      <body className={inter.className}>
+        <header className="w-full p-4 border-b flex justify-between items-center">
+          <div className="flex items-center gap-2">
             <Image
               src="/images/diamond-duck-sticker.png"
-              alt="Learning App Logo"
+              alt="Diamond Duck Logo"
               width={40}
               height={40}
               className="dark:invert"
             />
-            <span className="text-lg font-semibold">LearnHub</span>
-          </Link>
-
-          <nav className="flex gap-6 text-sm sm:text-base font-medium">
-            <Link href="/lessons" className="hover:underline hover:underline-offset-4">
-              Lessons
-            </Link>
-            <Link href="/learn" className="hover:underline hover:underline-offset-4">
-              Learn
-            </Link>
-            <Link href="/about" className="hover:underline hover:underline-offset-4">
-              About
-            </Link>
+            <h1 className="text-xl font-bold">Diamond Duck</h1>
+          </div>
+          <nav className="flex gap-4">
+            <Link href="/">Home</Link>
+            <Link href="/flashcards">Flashcards</Link>
+            <Link href="/about">About</Link>
           </nav>
         </header>
-
-        {/* Main content for every page */}
-        <main className="flex-grow">{children}</main>
-
-        {/* Footer for every page */}
-        <footer className="text-center text-sm py-4 text-gray-500">
-          Built with Next.js and ❤️
-        </footer>
+        <main>{children}</main>
       </body>
     </html>
   );

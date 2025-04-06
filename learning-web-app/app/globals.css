@@ -1,17 +1,16 @@
 @import "tailwindcss";
 
+/* 3D Flip Setup */
+.perspective {
+  perspective: 1000px;
+}
+
+
+/* Theme Variables */
 :root {
   --background: #ffffff;
   --foreground: #000000;
-
   --title-text: #3275f6;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
