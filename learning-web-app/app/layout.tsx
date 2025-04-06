@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen flex flex-col">
         {/* Persistent Navbar */}
-        <header className="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-gray-800">
+        <header className="flex justify-between items-center px-6 py-4 border-b border-black-600 dark:border-gray-800">
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/images/diamond-duck-sticker.png"
@@ -26,7 +26,7 @@ export default function RootLayout({
               height={40}
               className="dark:invert"
             />
-            <span className="text-lg font-semibold">LearnHub</span>
+            <span className="text-blue-600 text-lg font-semibold">Diamond Duck</span>
           </Link>
 
           <nav className="flex gap-6 text-sm sm:text-base font-medium">
