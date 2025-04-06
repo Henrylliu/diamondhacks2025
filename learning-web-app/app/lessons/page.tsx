@@ -1,25 +1,51 @@
 import Image from "next/image";
 import Link from "next/link";
+import "./globals.css";
 
 const lessons = [
   {
-    id: "intro-to-js",
-    title: "Intro to JavaScript",
-    description: "Learn the basics of JavaScript, including variables, functions, and loops.",
+    id: "kindergarten",
+    title: "Kindergarten Math",
+    description: "Learn the basics of addition, including simple sums and number bonds.",
+    gradeLevel: "Kindergarten", 
   },
   {
-    id: "html-basics",
-    title: "HTML Basics",
-    description: "Understand the structure of web pages with HTML tags and elements.",
+    id: "first-grade",
+    title: "First Grade Math",
+    description: "Understand subtraction with small numbers and practice simple subtraction problems.",
+    gradeLevel: "1st grade",
   },
   {
-    id: "css-styling",
-    title: "CSS Styling",
-    description: "Style your web pages using CSS selectors, flexbox, and grid.",
+    id: "second-grade",
+    title: "Second Grade Math",
+    description: "Learn the multiplication tables from 1 to 12 for quick recall.",
+    gradeLevel: "2nd grade"
+  },
+  {
+    id: "third-grade",
+    title: "Third Grade Math",
+    description: "Introduction to fractions, area, and perimeter",
+    gradeLevel: "3rd grade"
+  },
+  {
+    id: "fourth-grade",
+    title: "Fourth Grade Math",
+    description: "Learn about number theory and systems",
+    gradeLevel: "4th grade"
+  },
+  {
+    id: "fifth-grade",
+    title: "Fifth Grade Math",
+    description: "Learn about place value in decimals, including tenths, hundredths, and thousandths.",
+    gradeLevel: "5th grade",
+  },
+  {
+    id: "sixth-grade",
+    title: "Sixth Grade Math",
+    description: "Learn about geometric shapes, including triangles, squares, and circles, and their properties.",
+    gradeLevel: "6th grade", // 5th grade math lesson
   },
 ];
-
-
 
 export default function LessonsPage() {
   return (

@@ -27,12 +27,14 @@ export default function RootLayout({
               height={40}
               className="dark:invert"
             />
+
             <h1 className="text-xl font-bold">Diamond Duck</h1>
           </div>
           <nav className="flex gap-4">
             <Link href="/">Home</Link>
             <Link href="/flashcards">Flashcards</Link>
             <Link href="/about">About</Link>
+
           </nav>
         </header>
         <main>{children}</main>
