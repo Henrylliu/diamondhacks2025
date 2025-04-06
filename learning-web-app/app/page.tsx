@@ -1,45 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Top Navigation Bar */}
-      <header className="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-gray-800">
-        {/* Logo */}
-        <div className="flex items-center gap-2">
-          <Image
-            src="/images/diamond-duck-sticker.png"
-            alt="Learning App Logo"
-            width={40}
-            height={40}
-            className="dark:invert"
-          />
-          <span className="text-lg font-semibold">Diamond Duck</span>
-        </div>
+    <main className="flex-grow grid place-items-center px-8 py-20 sm:px-20">
+      <div className="flex flex-col gap-10 items-center text-center sm:text-left sm:items-start max-w-xl">
+        <h1 className="text-3xl sm:text-4xl font-bold">
+          Welcome to Diamond Duck! 🦆
+        </h1>
 
-        {/* Navigation Links */}
-        <nav className="flex gap-6 text-sm sm:text-base font-medium">
-          <Link href="/lessons" className="hover:underline hover:underline-offset-4">
-            Lessons
-          </Link>
-          <Link href="/learn" className="hover:underline hover:underline-offset-4">
-            Learn
-          </Link>
-          <Link href="/about" className="hover:underline hover:underline-offset-4">
-            About
-          </Link>
-        </nav>
-      </header>
-
-      {/* Main Content */}
-      <main className="flex-grow grid place-items-center px-8 py-20 sm:px-20">
-        <div className="flex flex-col gap-10 items-center text-center sm:text-left sm:items-start max-w-xl">
-          <h1 className="text-3xl sm:text-4xl font-bold">
-            Welcome to Diamond Duck! 🦆
-          </h1>
-          <p className="text-base text-gray-600 dark:text-gray-300">
-            Your personal space to explore interactive lessons, track progress, and learn at your own pace.
-          </p>
+        <p className="text-base text-gray-600 dark:text-gray-300">
+          Your personal space to explore interactive lessons, track progress, and learn at your own pace.
+        </p>
 
         <ul className="list-disc pl-5 text-sm text-left">
           <li>Interactive lessons and quizzes</li>
@@ -62,6 +34,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
