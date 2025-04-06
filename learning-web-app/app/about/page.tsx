@@ -40,7 +40,7 @@ export default function AboutPage() {
       <section className="max-w-3xl text-center sm:text-left mb-8">
         <h2 className="text-2xl sm:text-3xl font-semibold text-blue-600 mb-4">Our Team!</h2>
         <p className="text-base text-black-600 dark:text-gray-300">
-          Diamond Duck was built by 4 passionate college students who want to make the learning
+          Diamond Duck was built by Kyle, Henry, Sam, and Celine, four passionate college students, who want to make the learning
           experience for grade schoolers more enjoyable and engaging.
         </p>
       </section>
