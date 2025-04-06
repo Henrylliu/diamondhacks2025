@@ -22,13 +22,13 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
           <Link
             href="/lessons"
-            className="bg-blue-600 text-white px-4 py-3 rounded-full text-sm sm:text-base font-semibold hover:bg-blue-300 transition"
+            className="bg-blue-600 text-blue-100 px-4 py-3 rounded-full text-sm sm:text-base font-semibold hover:bg-blue-100 transition"
           >
             📚 Start Learning
           </Link>
           <Link
             href="/progress"
-            className="border border-blue-600 dark:border-gray-600 px-4 py-3 rounded-full text-sm sm:text-base font-semibold hover:bg-blue-600 dark:hover:bg-neutral-800 transition"
+            className="text-blue-600 border border-blue-600 dark:border-gray-600 px-4 py-3 rounded-full text-sm sm:text-base font-semibold hover:bg-blue-600 dark:hover:bg-neutral-800 transition"
           >
             📈 View Progress
           </Link>
