@@ -1,0 +1,66 @@
+:root {
+    --background: #f9fafb;
+    --foreground: #111827;
+    --primary: #3b82f6;
+    --accent: #e0f2fe;
+    --border-radius: 0.75rem;
+    --shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    --font: 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--background);
+    color: var(--foreground);
+    line-height: 1.6;
+  }
+  
+  /* Layout container */
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  }
+  
+  /* Buttons */
+  .button {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  /* Inputs */
+  input, textarea {
+    padding: 0.5rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+  }
