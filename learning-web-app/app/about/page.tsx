@@ -31,7 +31,7 @@ export default function AboutPage() {
         <h2 className="text-2xl sm:text-3xl font-semibold text-blue-600 mb-4 font-sans">How It Works!</h2>
         <p className="text-base text-black-600 dark:text-gray-300">
           Getting started with Diamond Duck is simple! You don't need to create an account,
-          just click lessons or learn in the upper right corner and start answering questions!
+          just click flashcards or the duck in the middle of home and start answering questions!
           We designed our website to be easily accessible for young students so they
           can feel encouraged to continue learning.
         </p>
