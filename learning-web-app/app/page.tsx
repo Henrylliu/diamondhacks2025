@@ -10,17 +10,18 @@ export default function Home() {
         </h1>
 
         <p className="text-base text-black-600 dark:text-gray-300">
-          Your personal space to explore interactive lessons, track progress, and learn at your own pace.
+          Your personal space to explore math with flashcards, learning at your own pace
         </p>
 
         <ul className="list-disc pl-5 text-sm text-left">
-          <li>Interactive flashcards and quizzes</li>
-          <li>Progress tracking and achievements</li>
+          <li>Interactive flashcards</li>
+          
           <li>Learn anywhere, anytime!</li>
+          <li>Cute duck</li>
         </ul>
       </div>
       <div className="flex flex-col items-center text-center gap-2">
-        <Link href="/lessons">
+        <Link href="/flashcards">
           <Image
             src="/images/diamond-duck-sticker.png"
             alt="Go to next page"
